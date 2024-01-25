@@ -14,7 +14,8 @@
     <main>
         <section class="primer-seccion">
             <div class="contenedor-textarea">
-                <textarea class="ingresar-texto" placeholder="Ingrese el texto aqui"></textarea>
+                <textarea class="ingresar-texto" onkeypress="return 'abcdefghijklmnñopqrstuvwxyz 0123456789'.includes(event.key)" 
+                placeholder="Ingrese el texto aqui" required></textarea>
             </div>
             <div>
                 <img src="Issues/img/Frame 1.png" alt="alerta">
