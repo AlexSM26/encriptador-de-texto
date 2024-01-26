@@ -2,13 +2,14 @@ var textoIngresado = document.querySelector(".ingresar-texto");
 var mensajeFinal = document.querySelector('#texto-resultado');
 var btnEncriptar = document.getElementById("btn-encriptar");
 var btnDesencriptar = document.getElementById('btn-desencriptar');
+var btnCopiar = document.getElementById('btn-copiar');
 
 var mensaje;
 var txtEncriptado
 var txtDesencriptado
 
 try {
-    //Encriptar las letras
+    //Encripta las letras
     btnEncriptar.addEventListener('click', () => {
         mensaje = textoIngresado.value.toLowerCase();
     
@@ -23,7 +24,7 @@ try {
     
     })
     
-    //Desencriptar las letras
+    //Desencripta las letras
     btnDesencriptar.addEventListener('click', () => {
     
         mensaje = textoIngresado.value.toLowerCase();
@@ -36,6 +37,32 @@ try {
          
         mensajeFinal.innerHTML = txtDesencriptado;
     })
+
+    if(mensaje != 0){
+       
+    }
+
+
+
+
+
+
+
+
+
+
+    btnCopiar.addEventListener('click', () =>{
+
+        textoIngresado.select();
+        document.execCommand('copy')
+        
+    })
+
+
+
+
+
+
 
 } catch (e) {
     alert(`A ocurrido un error ${e}`)

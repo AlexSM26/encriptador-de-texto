@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+
 
     <title>Encriptador de texto</title>
 
 </head>
 <body>
     <header>
-        <img src="Issues/img/Logo.png" alt="logo">
+        
     </header>
     <main>
         <section class="primer-seccion">
             <div class="contenedor-textarea">
+                <img class="logo" src="Issues/img/Logo.png" alt="logo">
                 <textarea class="ingresar-texto" onkeypress="return 'abcdefghijklmnñopqrstuvwxyz 0123456789'.includes(event.key)" 
                 placeholder="Ingrese el texto aqui" required></textarea>
             </div>
             <div>
-                <img src="Issues/img/Frame 1.png" alt="alerta">
+                <img class="alerta" src="Issues/img/Frame 1.png" alt="alerta">
             </div>
             <div class="contenedor-buttons-seccion1">
                 <button id="btn-encriptar">Encriptar</button>
@@ -30,14 +33,14 @@
                 <img class="muneco" src="Issues/img/Muñeco.png" alt="muñeco">
             </div>
             <div class="contenedor-texto">
-                <h2 id="texto-resultado">Ningun messaje fue <br> encontrado </h2>
+                <h2 id="texto-resultado">Ningun mensaje fue <br> encontrado </h2>
                 <p>Ingresa el texto que desees escriptar o <br> desencriptar</p>
             </div>
             <div class="contenedor-buttons-seccion2">
                 <button id="btn-copiar">Copiar</button>
             </div>
             <div class="contenedor-texto-resultado">
-                <p ></p>
+                <textarea class="texto-resultado" name="" disabled></textarea>
             </div>
         </section>
     </main>
