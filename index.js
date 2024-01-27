@@ -1,12 +1,21 @@
+//Mostrar en pantalla
 var textoIngresado = document.querySelector(".ingresar-texto");
-var mensajeFinal = document.querySelector('#texto-resultado');
+var mensajeFinal = document.querySelector('.texto-resultado');
+
+//Botones
 var btnEncriptar = document.getElementById("btn-encriptar");
 var btnDesencriptar = document.getElementById('btn-desencriptar');
 var btnCopiar = document.getElementById('btn-copiar');
 
+//Otros
+var imgMuneco = document.querySelector('.muneco');
+
+
+
+
 var mensaje;
-var txtEncriptado
-var txtDesencriptado
+var txtEncriptado;
+var txtDesencriptado;
 
 try {
     //Encripta las letras
@@ -21,6 +30,7 @@ try {
         .replace(/u/gi, 'ufat');
      
         mensajeFinal.innerHTML = txtEncriptado;
+        desaparecerElementos()
     
     })
     
@@ -38,17 +48,12 @@ try {
         mensajeFinal.innerHTML = txtDesencriptado;
     })
 
-    if(mensaje != 0){
-       
+
+
+    function desaparecerElementos(){
+        imgMuneco.style.display = "none"
+        //txtInfo.style.display = 'none'
     }
-
-
-
-
-
-
-
-
 
 
     btnCopiar.addEventListener('click', () =>{
@@ -60,12 +65,8 @@ try {
 
 
 
-
-
-
-
 } catch (e) {
-    alert(`A ocurrido un error ${e}`)
+    alert(`¡Upss a ocurrido elun error!  ${e}`)
 }
 
 
