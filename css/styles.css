@@ -137,6 +137,16 @@ main{
 
 }
 
+.contenedor-texto{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid red;
+    width: 70%;
+    
+}
+
 .contenedor-texto p{
     width: 80%;
     font-style: normal;
@@ -145,6 +155,7 @@ main{
     line-height: 150%;
     color: #495055;
 }
+
 
 .contenedor-img-persona{
     position: absolute;
@@ -166,7 +177,8 @@ main{
 
 }
 
-.texto-resultado{
+.contenedor-texto-resultado{
+    border: 1px solid blue;
     position: absolute;
     display: flex;
     justify-content: start;
@@ -175,4 +187,10 @@ main{
     top: 5%;
     left: 10%;
     border-radius: 20px;
+    
+}
+
+.contenedor-texto-resultado p{
+    padding: 20px;
+    line-height: 120%;
 }
