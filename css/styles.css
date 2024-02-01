@@ -1,4 +1,5 @@
 *{
+    font-family:"EB Garamond", serif;;
     margin: 0;
     padding: 0;
 }
@@ -18,6 +19,7 @@ main{
 
 .ingresar-texto{
     position: absolute;
+    resize: none;
     width: 40%;
     height: 60%;
     left: 12%;
@@ -74,6 +76,7 @@ main{
     border-radius: 24px;
     color: #fff;
     margin-right:30px;
+    font-size: 20px;
 }
 
 
@@ -89,6 +92,7 @@ main{
     border: 1px solid #0a3871;
     border-radius: 24px;
     color: #0a3871;
+    font-size: 20px;
 }
 
 #btn-encriptar:hover,
@@ -134,6 +138,7 @@ main{
     font-weight: 800;
     font-size: 20px;
     line-height: 120%;
+    font-size: 20px;
 
 }
 
@@ -142,9 +147,7 @@ main{
     display: flex;
     flex-direction: column;
     padding: 10px;
-    border: 1px solid red;
     width: 70%;
-    
 }
 
 .contenedor-texto p{
@@ -154,6 +157,7 @@ main{
     font-size: 16px;
     line-height: 150%;
     color: #495055;
+    font-size: 17px;
 }
 
 
@@ -168,18 +172,23 @@ main{
     position: absolute;
     margin-top: 8px;
     top: 90%;
-    left: 20%;
+    left: 10%;
     Width: 19em;
     Height: 50px;
     border: 2px solid #d8dfe8;
     Border-radius: 24px;
     background: #fff;
+    display: none;
+    font-size: 17px;
+    cursor: pointer;
+}
 
+#btn-copiar:active{
+    background-color: #bbc4c7;
 }
 
 .contenedor-texto-resultado{
-    border: 1px solid blue;
-    position: absolute;
+     position: absolute;
     display: flex;
     justify-content: start;
     width: 80%;
@@ -187,10 +196,18 @@ main{
     top: 5%;
     left: 10%;
     border-radius: 20px;
-    
+     
 }
 
-.contenedor-texto-resultado p{
+.texto-resultado {
+    font-size: 25px;
     padding: 20px;
     line-height: 120%;
+    resize: none;
+    width: 90%;
+    height: 70%;
+    display: none;
+    border: none;
+    cursor: auto;
 }
+
