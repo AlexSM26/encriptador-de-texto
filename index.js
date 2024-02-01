@@ -9,15 +9,16 @@ var btnCopiar = document.getElementById('btn-copiar');
 
 //Otros
 var imgMuneco = document.querySelector('.muneco');
+var infoSubtitulo = document.querySelector('.informacion-subtitulo');
+var infoParrafo = document.querySelector('.informacion-parrafo');
 
-
-
-
+//Variables
 var mensaje;
 var txtEncriptado;
 var txtDesencriptado;
 
 try {
+
     //Encripta las letras
     btnEncriptar.addEventListener('click', () => {
         mensaje = textoIngresado.value.toLowerCase();
@@ -30,8 +31,13 @@ try {
         .replace(/u/gi, 'ufat');
      
         mensajeFinal.innerHTML = txtEncriptado;
-        desaparecerElementos()
-    
+
+        if(mensaje.length != 0){
+            desaparecerElementos()           
+        }else{
+            aparecerElementos()
+        }
+
     })
     
     //Desencripta las letras
@@ -46,27 +52,42 @@ try {
         .replace(/ufat/gi,'u');
          
         mensajeFinal.innerHTML = txtDesencriptado;
+
+        if(mensaje.length != 0){
+            desaparecerElementos()           
+        }else{
+            aparecerElementos()
+        }
     })
 
-
-
     function desaparecerElementos(){
-        imgMuneco.style.display = "none"
-        //txtInfo.style.display = 'none'
+        imgMuneco.style.display = 'none';
+        infoSubtitulo.style.display = 'none';
+        infoParrafo.style.display = 'none';
+        mensajeFinal.style.display = 'unset';
+        btnCopiar.style.display = 'unset';
     }
 
+    function aparecerElementos(){
+        imgMuneco.style.display = 'unset';
+        infoSubtitulo.style.display = 'unset';
+        infoParrafo.style.display = 'unset';
+        mensajeFinal.style.display = 'none';
+        btnCopiar.style.display = 'none';
+        infoParrafo.innerHTML = 'Ingresa el texto que desees escriptar o <br> desencriptar'
+    }
 
     btnCopiar.addEventListener('click', () =>{
 
-        textoIngresado.select();
+        mensajeFinal.select();
         document.execCommand('copy')
+        infoParrafo.style.display = 'unset'
+        infoParrafo.innerHTML= 'Mensaje copiado con exito'
         
     })
 
-
-
 } catch (e) {
-    alert(`¡Upss a ocurrido elun error!  ${e}`)
+    alert(`¡Upss a ocurrido un error!  ${e}`)
 }
 
 
