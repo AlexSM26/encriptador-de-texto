@@ -79,7 +79,6 @@ main{
     font-size: 20px;
 }
 
-
 #btn-desencriptar{
     display: flex;
     flex-direction: row;
@@ -160,12 +159,13 @@ main{
     font-size: 17px;
 }
 
-
 .contenedor-img-persona{
     position: absolute;
-    width: 80%;
-    height: 50%;
     top: 15%;
+}
+
+.muneco{
+    width: 100%;
 }
 
 .contenedor-buttons-seccion2 #btn-copiar{
@@ -173,7 +173,7 @@ main{
     margin-top: 8px;
     top: 90%;
     left: 10%;
-    Width: 19em;
+    Width: 80%;
     Height: 50px;
     border: 2px solid #d8dfe8;
     Border-radius: 24px;
@@ -211,3 +211,153 @@ main{
     cursor: auto;
 }
 
+/* Mobile */
+@media screen and (max-width:425px){
+      
+    .logo{
+        top: 2%;
+        left: 2%;
+    }
+    
+    .ingresar-texto{
+        width: 80%;
+        height: 25%;
+        left: 10%;
+        top: 10%;
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    .alerta{
+        width: 60%;
+        top: 39%;
+    }
+    
+    .contenedor-buttons-seccion1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        left: 5%;
+        top: 42%;
+    }
+     
+    #btn-encriptar{
+        padding: 2%;
+        width: 90%;
+        margin-bottom:10%;
+    }
+        
+    #btn-desencriptar{
+        padding: 2%;
+        width: 90%;
+    }
+
+    #btn-encriptar:hover{
+    width: 90%;
+    margin-bottom: 30px;
+    cursor: pointer;
+    }
+
+    #btn-desencriptar:hover{
+    width: 90%;
+    cursor: pointer;
+    }
+
+    .muneco{
+        display: none !important;
+    }
+    .segunda-seccion{
+        width: 90%;
+        height: 30%;
+        left: 5%;
+        top: 62%;
+    }
+ 
+    .contenedor-texto{
+        position: absolute;
+        padding: 3%;
+        top: 20%;
+        width: 70%;
+    }
+    
+    .contenedor-buttons-seccion2  #btn-copiar{
+        position: absolute;
+        top: 75%;
+        left: 10%;
+        Width: 80%;
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:768px) {
+
+    .logo{
+        top: 5%;
+        left: 8%;
+    }
+    
+    .ingresar-texto{
+        width: 80%;
+        height: 35%;
+        left: 10%;
+        top: 10%;
+        font-size: 28px;
+        font-weight: 300;
+    }
+
+    .alerta{
+        width: 35%;
+        top: 50%;
+    }
+    
+    .contenedor-buttons-seccion1{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        left: 10%;
+        top: 55%;
+    }
+     
+    #btn-encriptar{
+        padding: 2%;
+        width: 50%;
+        margin-bottom:10%;
+    }
+        
+    #btn-desencriptar{
+        padding: 2%;
+        width: 50%;
+    }
+    
+    #btn-encriptar:hover,
+    #btn-desencriptar:hover{
+        width: 50%;
+        padding: 2%;
+        margin-right:10px;
+        cursor: pointer;
+    }
+    .muneco{
+        display: none !important;
+    }
+    .segunda-seccion{
+        width: 90%;
+        height: 30%;
+        left: 5%;
+        top: 62%;
+    }
+ 
+    .contenedor-texto{
+        position: absolute;
+        padding: 3%;
+        top: 20%;
+        width: 70%;
+    }
+    
+    .contenedor-buttons-seccion2  #btn-copiar{
+        position: absolute;
+        top: 75%;
+        left: 10%;
+        Width: 80%;
+        font-size: 17px;
+    }
+}
