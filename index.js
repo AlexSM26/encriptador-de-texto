@@ -19,6 +19,27 @@ var txtDesencriptado;
 
 try {
 
+    //Validacion de letras y numeros
+    function validarLetras(l) {
+        key = l.keyCode || l.which;
+        tecla = String.fromCharCode(key).toLowerCase();
+        letras = " abcdefghijklmnñopqrstuvwxyz123456789";
+        especiales = [8, 37, 39, 46];
+        
+        //Buscamos si esta la tecla precionada por el usuario
+        tecla_especial = false
+        for(var i in especiales) {
+            if(key == especiales[i]) {
+                tecla_especial = true;
+                break;
+            }
+        }
+        if(letras.indexOf(tecla) == -1 && !tecla_especial){
+            return false;
+        }
+            
+    }
+
     //Encripta las letras
     btnEncriptar.addEventListener('click', () => {
         mensaje = textoIngresado.value.toLowerCase();
@@ -89,6 +110,3 @@ try {
 } catch (e) {
     alert(`¡Upss a ocurrido un error!  ${e}`)
 }
-
-
-  
