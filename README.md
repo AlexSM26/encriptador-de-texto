@@ -1,9 +1,9 @@
-<h2>Desafio Alura</h2>
+<h2>Desafio Alura Latam</h2>
 <h3>Encriptador de texto</h3>
 
 <p>Esta pequeña pagina funciona como un encriptador de texto que cambia las palabras que ingresa el usuario 
   por palabras encriptadas o al reves, porque tambien podemos desencriptar las palabras.</p>
-<p>Este encriptador funciona con palabras encriptadas proporcionadas por Aluran.</p>
+<p>Este encriptador funciona con palabras encriptadas proporcionadas por Alura.</p>
 
 >[!TIP]
 >Las palabras ingresadas por el usuario se van a encriptar por las siguientes palabras
