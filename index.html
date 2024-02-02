@@ -20,7 +20,8 @@
         <section class="primer-seccion">
             <div class="contenedor-textarea">
                 <img class="logo" src="Issues/img/Logo.png" alt="logo">
-                <textarea class="ingresar-texto" onkeypress="return 'abcdefghijklmnñopqrstuvwxyz 0123456789'.includes(event.key)" 
+                
+                <textarea class="ingresar-texto" onkeypress="return validarLetras(event)" 
                 placeholder="Ingrese el texto aqui" required></textarea>
             </div>
             <div>
@@ -39,14 +40,16 @@
                 <h2 class="informacion-subtitulo">Ningun mensaje fue <br> encontrado </h2>
                 <p class="informacion-parrafo">Ingresa el texto que desees escriptar o <br> desencriptar</p>
             </div>
-            <div class="contenedor-buttons-seccion2">
-                <button id="btn-copiar">Copiar</button>
-            </div>
             <div class="contenedor-texto-resultado">
                 <textarea class="texto-resultado"  readonly="readonly"></textarea>
             </div>
+            <div class="contenedor-buttons-seccion2">
+                <button id="btn-copiar">Copiar</button>
+            </div>
+            <p>By: Alexander Sanchez Murillo</p>
         </section>
     </main>
     <script src="index.js"></script>
 </body>
 </html>
+
