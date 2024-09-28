@@ -6,7 +6,7 @@ En este proyecto se desarrolló una pagina web sencilla cuyo propósito principa
 La aplicación permite al usuario ingresar una serie de palabras o frases, las cuales son procesadas por el algoritmo de encriptación que convierte el texto en diferetes palabras, este proceso es reversible, permitiendo también desencriptar el texto y devolverlo a su forma original.
 
 # Cambio de letras
->Las letras ingresadas por el usuario van a ser encriptadas y cambiadas por las siguientes palabras: 
+Las letras ingresadas por el usuario van a ser encriptadas y cambiadas por las siguientes palabras: 
 > <ul>
 >  <li>La letra "e" se convierte en "enter"</li>
 >  <li>La letra "i" se convierte en "imes"</li>
