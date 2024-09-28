@@ -1,19 +1,17 @@
-<h2>Desafio Alura Latam</h2>
-<h3>Encriptador de texto</h3>
+# Desafio Alura Latam
+<h2>Encriptador de texto</h2>
 
-<p>Esta pequeña pagina funciona como un encriptador de texto que cambia las palabras que ingresa el usuario 
-  por palabras encriptadas o al reves, porque tambien podemos desencriptar las palabras.</p>
-<p>Este encriptador funciona con palabras encriptadas proporcionadas por Alura.</p>
+En este proyecto se desarrolló una pagina web sencilla cuyo propósito principal es encriptar palabras utilizando algoritmos de cifrado básicos, el proyecto fue un desafio de Alura Latan cuyo proposito es poner a prueba lo que vimos a lo largo del curso.
 
->[!TIP]
->Las palabras ingresadas por el usuario se van a encriptar por las siguientes palabras
+La aplicación permite al usuario ingresar una serie de palabras o frases, las cuales son procesadas por el algoritmo de encriptación que convierte el texto en diferetes palabras, este proceso es reversible, permitiendo también desencriptar el texto y devolverlo a su forma original.
+
+# Cambio de letras
+>Las letras ingresadas por el usuario van a ser encriptadas y cambiadas por las siguientes palabras: 
 > <ul>
->  <li>La letra "e" es convertida para "enter"</li>
->  <li>La letra "i" es convertida para "imes"</li>
->  <li>La letra "a" es convertida para "ai"</li>
->  <li>La letra "o" es convertida para "ober""</li>
->  <li>La letra "u" es convertida para "ufat"</li>
+>  <li>La letra "e" se convierte en "enter"</li>
+>  <li>La letra "i" se convierte en "imes"</li>
+>  <li>La letra "a" es se convierte en "ai"</li>
+>  <li>La letra "o" es se convierte en "ober""</li>
+>  <li>La letra "u" es se convierte en "ufat"</li>
 </ul>
 
->[!NOTE]
->La pagina es responsiva, por lo cual esta adaptada para diferentes dispositivos.
